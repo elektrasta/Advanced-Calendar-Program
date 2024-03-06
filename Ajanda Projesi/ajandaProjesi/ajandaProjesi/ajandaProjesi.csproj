@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17D2AA97-79AD-4284-8261-C83A4310214B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ajandaProjesi</RootNamespace>
+    <AssemblyName>ajandaProjesi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajandaDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ajandaDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ajandaGirisPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajandaGirisPaneli.Designer.cs">
+      <DependentUpon>ajandaGirisPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="arastirmaciGirisPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arastirmaciGirisPaneli.Designer.cs">
+      <DependentUpon>arastirmaciGirisPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="arastirmaciKitapPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arastirmaciKitapPaneli.Designer.cs">
+      <DependentUpon>arastirmaciKitapPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="arastirmaciPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arastirmaciPaneli.Designer.cs">
+      <DependentUpon>arastirmaciPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="arastirmaciSifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arastirmaciSifremiUnuttum.Designer.cs">
+      <DependentUpon>arastirmaciSifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="arastirmaciYeniKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arastirmaciYeniKayit.Designer.cs">
+      <DependentUpon>arastirmaciYeniKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullaniciGirisPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullaniciGirisPaneli.Designer.cs">
+      <DependentUpon>kullaniciGirisPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciGirisPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciGirisPaneli.Designer.cs">
+      <DependentUpon>ogrenciGirisPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciKitapPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciKitapPaneli.Designer.cs">
+      <DependentUpon>ogrenciKitapPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciPaneli.Designer.cs">
+      <DependentUpon>ogrenciPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciYeniKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciYeniKayit.Designer.cs">
+      <DependentUpon>ogrenciYeniKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelGirisPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelGirisPaneli.Designer.cs">
+      <DependentUpon>personelGirisPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelKitapPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelKitapPaneli.Designer.cs">
+      <DependentUpon>personelKitapPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelPaneli.Designer.cs">
+      <DependentUpon>personelPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelSifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelSifremiUnuttum.Designer.cs">
+      <DependentUpon>personelSifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelYeniKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelYeniKayit.Designer.cs">
+      <DependentUpon>personelYeniKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="yoneticiArastirmaci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yoneticiArastirmaci.Designer.cs">
+      <DependentUpon>yoneticiArastirmaci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticiGirisPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yoneticiGirisPaneli.Designer.cs">
+      <DependentUpon>yoneticiGirisPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciSifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciSifremiUnuttum.Designer.cs">
+      <DependentUpon>ogrenciSifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticiOgrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yoneticiOgrenci.Designer.cs">
+      <DependentUpon>yoneticiOgrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticiPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yoneticiPaneli.Designer.cs">
+      <DependentUpon>yoneticiPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticiPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yoneticiPersonel.Designer.cs">
+      <DependentUpon>yoneticiPersonel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ajandaGirisPaneli.resx">
+      <DependentUpon>ajandaGirisPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="arastirmaciGirisPaneli.resx">
+      <DependentUpon>arastirmaciGirisPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="arastirmaciKitapPaneli.resx">
+      <DependentUpon>arastirmaciKitapPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="arastirmaciPaneli.resx">
+      <DependentUpon>arastirmaciPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="arastirmaciSifremiUnuttum.resx">
+      <DependentUpon>arastirmaciSifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="arastirmaciYeniKayit.resx">
+      <DependentUpon>arastirmaciYeniKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullaniciGirisPaneli.resx">
+      <DependentUpon>kullaniciGirisPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciGirisPaneli.resx">
+      <DependentUpon>ogrenciGirisPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciKitapPaneli.resx">
+      <DependentUpon>ogrenciKitapPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciPaneli.resx">
+      <DependentUpon>ogrenciPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciYeniKayit.resx">
+      <DependentUpon>ogrenciYeniKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelGirisPaneli.resx">
+      <DependentUpon>personelGirisPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelKitapPaneli.resx">
+      <DependentUpon>personelKitapPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelPaneli.resx">
+      <DependentUpon>personelPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelSifremiUnuttum.resx">
+      <DependentUpon>personelSifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelYeniKayit.resx">
+      <DependentUpon>personelYeniKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="yoneticiArastirmaci.resx">
+      <DependentUpon>yoneticiArastirmaci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yoneticiGirisPaneli.resx">
+      <DependentUpon>yoneticiGirisPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciSifremiUnuttum.resx">
+      <DependentUpon>ogrenciSifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yoneticiOgrenci.resx">
+      <DependentUpon>yoneticiOgrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yoneticiPaneli.resx">
+      <DependentUpon>yoneticiPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yoneticiPersonel.resx">
+      <DependentUpon>yoneticiPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ajandaDBDataSet.xsc">
+      <DependentUpon>ajandaDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ajandaDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ajandaDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ajandaDBDataSet.xss">
+      <DependentUpon>ajandaDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
